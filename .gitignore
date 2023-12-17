@@ -1,0 +1,4 @@
+testing_wold/report/*
+testing_wold/archive/*
+testing_wold/.pytest_cache/*
+testing_wold/__pycache__/*
