@@ -1,10 +1,13 @@
 ﻿import openpyxl
 import requests
 import datetime
+from pathlib import Path
+
 
 def test_add_students_from_excel():
     # 載入Excel檔案
-    workbook = openpyxl.load_workbook('./ts_data.xlsx')
+    load_data = Path.cwd() / "testing_wold" / "ts_data.xlsx"
+    workbook = openpyxl.load_workbook(load_data)
     sheet = workbook.active
 
     # API URL
